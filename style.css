@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #1f0036 0%, #ff00cc 100%);
+  color: #00ffff;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* --- Top Navigation Bar --- */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000cc;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px #ff00cc;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.top-nav a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.top-nav a:hover {
+  color: #ffcc00;
+}
+
+/* --- Header Section --- */
+header {
+  padding: 40px 20px 20px;
+  background: #00000066;
+  box-shadow: 0 0 15px #ff00cc;
+  margin-bottom: 0;
+}
+
+
+.logo {
+  width: 220px;
+  margin: 10px auto;
+  display: block;
+}
+
+
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #ff00cc;
+  text-shadow: 2px 2px #000;
+}
+
+header p {
+  margin-top: 15px;
+  color: #00ffff;
+}
+
+/* --- Main Content --- */
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.neon-box {
+  background-color: #111;
+  border: 2px solid #00ffff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 20px;
+  background: #00000066;
+  color: #999;
+  font-size: 0.8em;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
