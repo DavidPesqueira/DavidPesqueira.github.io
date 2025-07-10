@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Me - David Pesqueira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <div id="sidebar-container"></div>
+  <script>
+    fetch('sidebar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('sidebar-container').innerHTML = html;
+      });
+  </script>
+
+  <div class="content">
+    <header>
+      <h1>About Me</h1>
+    </header>
+    <main>
+      <section class="neon-box">
+        <p>
+          Full bio and extended background info goes here. You can also embed timelines,
+          images, or structured highlights.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

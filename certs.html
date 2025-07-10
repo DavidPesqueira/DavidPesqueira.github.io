@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certifications – David Pesqueira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar Menu -->
+
+  <!-- JavaScript-based Sidebar Loader -->
+  <div id="sidebar-container"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('sidebar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('sidebar-container').innerHTML = html;
+        });
+    });
+  </script>
+
+  <div class="content">
+    <header>
+      <h1>Certifications</h1>
+      <p>Selected credentials and training accomplishments</p>
+    </header>
+
+    <section class="neon-box">
+      <ul>
+        <li><strong>CRTO</strong> – Certified Red Team Operator </li>
+        <li><strong>PJPT</strong> – Practical Junuior Penetraion Tester</li>
+        <li><strong>AZ-900</strong> – Azure Fundamentals</li>
+
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects – David Pesqueira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar Menu -->
+  <!-- JavaScript-based Sidebar Loader -->
+  <div id="sidebar-container"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('sidebar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('sidebar-container').innerHTML = html;
+        });
+    });
+  </script>
+
+  <div class="content">
+
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <h1>Projects</h1>
+      <p>Offensive tools, write-ups, and lab builds</p>
+    </header>
+
+    <section class="neon-box">
+      <ul>
+        <li>
+          <strong>ZeroPoint RTO Lab</strong><br />
+          Custom adversary emulation lab using VirtualBox & Terraform.<br />
+          <em>Tools: C2s, evasive payloads, detection pipelines</em>
+        </li>
+        <li>
+          <strong>Payload Factory</strong><br />
+          Automation scripts for shell generation, encoding, and delivery.<br />
+          <em>Bash, Python, and C2 integrations</em>
+        </li>
+        <li>
+          <strong>Red Team Field Manual</strong><br />
+          Personal knowledge base of tactics, notes, and op flow.<br />
+          <em>Maintained for HTB/Proving Grounds/IRL use</em>
+        </li>
+        <li>
+          <strong>Infra Assessment Scripts</strong><br />
+          Toolset for recon, scanning, reporting on corp networks.
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

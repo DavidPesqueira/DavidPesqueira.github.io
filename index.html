@@ -2,53 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David Pesqueira</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="nav-bar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#certs">Certs</a></li>
-      <li><a href="offsetllc.html">Offset Intel LLC</a></li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1>David Pesqueira</h1>
-    <p>Red Teamer | Adversarial Engineer | Digital Underground Operative</p>
-  </header>
+  <!-- JavaScript-based Sidebar Loader -->
+  <div id="sidebar-container"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('sidebar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('sidebar-container').innerHTML = html;
+        });
+    });
+  </script>
 
-  <main>
-    <section id="about" class="neon-box">
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <h1>David Pesqueira</h1>
+      <p>Red Teamer | Adversarial Engineer | LinkedIn</p>
+    </header>
+
+    <!-- About Me Box -->
+    <section class="neon-box clickable-box" onclick="location.href='aboutme.html'">
       <h2>About Me</h2>
       <p>
-        I’m a red teamer and offensive security professional focused on adversary simulation, TTP emulation, and complex post-exploitation workflows.
-        My experience includes internal assessments, infrastructure testing, and threat emulation.
+        I’m a red teamer and offensive security professional focused on adversary simulation,
+        TTP emulation, and complex post-exploitation workflows. My experience includes internal
+        assessments, infrastructure testing, and threat emulation.
       </p>
     </section>
 
-    <section id="certs" class="neon-box">
+    <!-- Certifications Box -->
+    <section class="neon-box clickable-box" onclick="location.href='certs.html'">
       <h2>Certifications</h2>
       <ul>
-        <li>OSCP</li>
-        <li>CRTO / CRTO II</li>
-        <li>HTB Certified</li>
-        <li>Other custom stuff here</li>
+        <li>CRTO</li>
+        <li>PJPT</li>
+        <li>AZ-900</li>
       </ul>
     </section>
 
-    <section class="neon-box">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ops@offsetintel.com">ops@offsetintel.com</a></p>
-      <p>GitHub: <a href="https://github.com/rmasterhacker" target="_blank">rmasterhacker</a></p>
+    <!-- Projects Box -->
+    <section class="neon-box clickable-box" onclick="location.href='projects.html'">
+      <h2>Projects</h2>
+      <p>
+        Infrastructure automation, custom C2 tooling, internal post-exploitation frameworks,
+        and red team utilities built for operational realism.
+      </p>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 David Pesqueira. All rights reserved.</p>
-  </footer>
+  </div>
 </body>
 </html>
