@@ -150,4 +150,12 @@ a:hover {
   transform: scale(1.02);
   box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
 }
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.project-link:hover strong {
+  color: #ffcc00;
+}
 
